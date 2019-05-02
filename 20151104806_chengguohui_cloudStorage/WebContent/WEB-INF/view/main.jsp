@@ -152,7 +152,7 @@
     </div>
     <div id="mainPanle" region="center" style="background: #eee; overflow-y:hidden">
         <div id="tabs" class="easyui-tabs"  fit="true" border="false" >
-			<div title="欢迎使用" style="padding:20px;overflow:hidden;color:red;background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery3.jpg) no-repeat left top;background-size:100%;" >
+			<div title="欢迎使用" style="padding:20px;overflow:hidden;color:red;background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery6.jpg) no-repeat left top;background-size:100%;" >
 			</div>
 		</div>
     </div>
