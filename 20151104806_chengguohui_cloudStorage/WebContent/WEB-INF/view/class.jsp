@@ -14,10 +14,8 @@
 	}
 	</script>
 </head>
-<body>
-	<table style="
-    margin: 0px;
-">
+<body style="background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery3.jpg) no-repeat left top;background-size:100%;">
+	<table style="margin: 0px;">
 		<tr>
 			<th></th>
 			<th>文件名</th>

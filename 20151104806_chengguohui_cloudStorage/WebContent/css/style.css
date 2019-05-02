@@ -82,7 +82,7 @@ img {
 
 /*--- end reset code ---*/
 body {
-	background:url(../images/bg.jpg);
+	background:url(../images/scenery1.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-attachment:fixed;
@@ -117,7 +117,7 @@ h1 {
 	text-transform:uppercase;
 }
 .form-w3ls {
-	background:rgba(188, 0, 255, 0.51);
+	background:rgba(192, 192, 192, 0.51);
 	padding: 40px 50px;
 	width:35%;
 	margin:0 auto;

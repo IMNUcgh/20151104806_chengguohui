@@ -73,13 +73,6 @@
                 return false;
             }
 
-            <%--$.post('/modify?password=' + $newpass.val() + "&newEmail=" + $newEmail.val()--%>
-                <%--+ "&userId=${sessionScope.user.id}", function(msg) {--%>
-                <%--msgShow('系统提示', '恭喜，密码修改成功！<br>您的新密码为：' + msg, 'info');--%>
-                <%--$newpass.val('');--%>
-                <%--$rePass.val('');--%>
-                <%--close();--%>
-            <%--})--%>
 
             $.ajax({
                 url : "${pageContext.request.contextPath}/modify",
@@ -159,8 +152,7 @@
     </div>
     <div id="mainPanle" region="center" style="background: #eee; overflow-y:hidden">
         <div id="tabs" class="easyui-tabs"  fit="true" border="false" >
-			<div title="欢迎使用" style="padding:20px;overflow:hidden; color:red; background:url(/20151104806_chengguohui_cloudStorage/images/bg.jpg);" >
-
+			<div title="欢迎使用" style="padding:20px;overflow:hidden;color:red;background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery3.jpg) no-repeat left top;background-size:100%;" >
 			</div>
 		</div>
     </div>

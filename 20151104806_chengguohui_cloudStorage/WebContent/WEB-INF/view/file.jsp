@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="/20151104806_chengguohui_cloudStorage/js/jquery-1.4.4.min.js"></script>
 	<title>文件目录</title>
 </head>
-<body>
+<body style="background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery2.jpg) no-repeat left top;background-size:100%;">
 	<script>
 		var sysMsg = "${sysMsg}";
 		if(sysMsg != "")

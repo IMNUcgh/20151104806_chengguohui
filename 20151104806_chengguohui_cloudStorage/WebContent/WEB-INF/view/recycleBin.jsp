@@ -8,7 +8,7 @@
 	<link href="/20151104806_chengguohui_cloudStorage/css/file.css" rel='stylesheet' type='text/css'/>
 	<title>文件分享区</title>
 </head>
-<body>
+<body style="background:#fff url(/20151104806_chengguohui_cloudStorage/images/scenery5.jpg) no-repeat left top;background-size:100%;">
 	<table>
 		<tr>
 			<th>操作</th>
