@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>云盘</title>
+    <title>口袋云盘</title>
     <link href="css/default.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="js/themes/default/easyui.css" />
     <link rel="stylesheet" type="text/css" href="js/themes/icon.css" />
@@ -138,7 +138,7 @@
         background: url(images/layout-browser-hd-bg.gif) #7f99be repeat-x center 50%;
         line-height: 20px;color: #fff; font-family: Verdana, 微软雅黑,黑体">
         <span style="float:right; padding-right:20px;" class="head">欢迎 ${sessionScope.user.username } <a id="editpass">修改信息</a> <a id="loginOut">安全退出</a></span>
-        <span style="padding-left:10px; font-size: 16px; "><img src="images/headerLogo.png" width="30" height="20" align="absmiddle" /> 云盘</span>
+        <span style="padding-left:10px; font-size: 16px; "><img src="images/headerLogo.png" width="30" height="20" align="absmiddle" />口袋云盘</span>
     </div>
     <div region="south" split="true" style="height: 30px; background: #D2E0F2; ">
         <div class="footer"></div>
