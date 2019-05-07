@@ -366,19 +366,11 @@ public class FileManage {
 			File target = new File(SystemConstant.USER_FILE_PATH + "\\" + folder.getPath() + folder.getName());
 
 			folder.setPath(SystemConstant.toSQLString(folder.getPath()));
-			// 找出所有的子目录
 			List<Folder> targetFolder = folderMapper.selectAllFolderByFatherFolder(folder);
-			// 删除根目录下的文件
-			// cloudFileMapper.deleteFileByFolderId(folder.getId());
-			// 删除子目录下的文件和文件夹
 			for (Folder f : targetFolder) {
-//				cloudFileMapper.deleteFileByFolderId(f.getId());
 				folderMapper.deleteFolderById(f.getId());
 			}
-			// 最后删除目标文件夹
 			folderMapper.deleteFolderById(folderId);
-
-			// 服务器执行删除实际文件夹
 			sysMsg = "删除成功";
 		} catch (Exception e) {
 			sysMsg = "系统异常";
@@ -567,9 +559,7 @@ public class FileManage {
 			folder = folderMapper.selectFolderById(folderId);
 			String path = SystemConstant.USER_FILE_PATH + folder.getPath() + folder.getName() + "\\" ;
 
-			// 从数据库中删除该文件夹
             folderMapper.deleteFolderByIdFromRecycleBin(folderId);
-            // 从数据库中删除该文件夹下的文件
             cloudFileMapper.deleteTrueFileByFolderId(folderId);
 
 			File directory = new File(path);
@@ -577,7 +567,6 @@ public class FileManage {
                 throw new RuntimeException("文件夹不存在");
 			}
 
-			// 删除磁盘上的文件夹和其下的文件
             if (!SystemConstant.deleteDir(directory)) {
                 throw new RuntimeException("文件夹删除失败");
             }

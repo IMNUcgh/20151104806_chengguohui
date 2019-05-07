@@ -19,7 +19,7 @@
 		function downloads(){
 			var idsstr='';
 			var foldersstr='';
-			$("input[type=checkbox]").each(function(){ //遍历table里的全部checkbox 
+			$("input[type=checkbox]").each(function(){  
 				if($(this).attr("checked")){
 					idsstr += $(this).attr('id')+","; 
 					foldersstr += $(this).attr('name')+","; 

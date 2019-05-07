@@ -11,7 +11,6 @@ public class SystemConstant
 		return path.replace("\\", "\\\\\\\\");
 	}
 
-	/*递归删除文件夹和文件夹下的子文件*/
 	public static boolean deleteDir(File dir) 
 	{
 		if (dir.isDirectory()) 

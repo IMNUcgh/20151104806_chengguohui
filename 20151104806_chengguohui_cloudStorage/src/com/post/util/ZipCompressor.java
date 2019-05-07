@@ -53,7 +53,7 @@ public class ZipCompressor {
     public void compress(String srcPathName) {  
         File file = new File(srcPathName);  
         if (!file.exists())  
-            throw new RuntimeException(srcPathName + "²»´æÔÚ£¡");  
+            throw new RuntimeException(srcPathName + "ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½");  
         try {  
             FileOutputStream fileOutputStream = new FileOutputStream(zipFile);  
             CheckedOutputStream cos = new CheckedOutputStream(fileOutputStream,  
@@ -67,30 +67,27 @@ public class ZipCompressor {
         }  
     }  
    
-    private void compress(File file, ZipOutputStream out, String basedir) {  
-        /* ÅÐ¶ÏÊÇÄ¿Â¼»¹ÊÇÎÄ¼þ */ 
+    private void compress(File file, ZipOutputStream out, String basedir) {   
         if (file.isDirectory()) {  
-            System.out.println("Ñ¹Ëõ£º" + basedir + file.getName());  
+            System.out.println("Ñ¹ï¿½ï¿½ï¿½ï¿½" + basedir + file.getName());  
             this.compressDirectory(file, out, basedir);  
         } else {  
-            System.out.println("Ñ¹Ëõ£º" + basedir + file.getName());  
+            System.out.println("Ñ¹ï¿½ï¿½ï¿½ï¿½" + basedir + file.getName());  
             this.compressFile(file, out, basedir);  
         }  
     }  
-   
-    /** Ñ¹ËõÒ»¸öÄ¿Â¼ */ 
+
     private void compressDirectory(File dir, ZipOutputStream out, String basedir) {  
         if (!dir.exists())  
             return;  
    
         File[] files = dir.listFiles();  
         for (int i = 0; i < files.length; i++) {  
-            /* µÝ¹é */ 
+            /* ï¿½Ý¹ï¿½ */ 
             compress(files[i], out, basedir + dir.getName() + "/");  
         }  
     }  
    
-    /** Ñ¹ËõÒ»¸öÎÄ¼þ */ 
     private void compressFile(File file, ZipOutputStream out, String basedir) {  
         if (!file.exists()) {  
             return;  

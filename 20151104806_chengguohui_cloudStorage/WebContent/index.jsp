@@ -8,9 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Eminent Login Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- css files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
-<!-- /css files -->
 </head>
 <body>
 <script type="text/javascript">
@@ -54,7 +52,7 @@
 		</div> 
     </div>
 </div> 
-<p class="copyright">© All Rights Reserved</p>
+<p class="copyright">Copyright©chengguohui All Rights Reserved</p>
 <script src='js/jquery.min.js'></script>
 <script src="js/index.js"></script>
 <script type="text/javascript">

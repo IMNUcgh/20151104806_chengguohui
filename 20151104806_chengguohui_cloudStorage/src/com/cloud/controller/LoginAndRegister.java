@@ -144,41 +144,4 @@ public class LoginAndRegister
 		}
 		return "/index.jsp";
 	}
-
-	@ResponseBody
-	@RequestMapping(value = "/modify", method = RequestMethod.POST)
-	public Map<String, Object> modifyUser(@RequestParam("userId") String userId,
-										  @RequestParam("password") String password,
-										  @RequestParam("newEmail") String newEmail) {
-		Map<String, Object> response = new HashMap<>(2);
-		if (userId == null || "".equals(userId)) {
-			response.put("status", "fail");
-			response.put("msg", "当前没有登陆的用户，请重新登陆");
-			return response;
-		}
-		if (password == null || "".equals(password)) {
-			response.put("status", "fail");
-			response.put("msg", "密码不能为空");
-			return response;
-		}
-		if (newEmail == null || "".equals(newEmail)) {
-			response.put("status", "fail");
-			response.put("msg", "邮箱不能为空");
-			return response;
-		}
-
-		SqlSession sqlSession = MyBatisUtil.getSqlSessionFactory().openSession(true);
-		UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-		try {
-			userMapper.updateUser(userId, password, newEmail);
-		} catch (Exception e) {
-			response.put("status", "fail");
-			response.put("msg", "系统异常");
-			e.printStackTrace();
-			return response;
-		}
-		response.put("status", "success");
-		response.put("msg", "修改成功");
-		return response;
-	}
 }
